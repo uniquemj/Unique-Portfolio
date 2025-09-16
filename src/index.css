@@ -5,6 +5,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+body{
+  font-family: var(--font-saira);
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -42,9 +46,57 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /*font*/
+  /* color */
+  --color-black: var(--color-black);
+  --color-white: var(--color-white);
+  --color-primary-800: var(--color-primary-800);
+
+  /* spacing */
+  --spacing-space-3: 3px;
+  --spacing-space-4: 4px;
+  --spacing-space-10: 10px;
+  --spacing-space-12: 12px;
+  --spacing-space-14: 14px;
+  --spacing-space-16: 16px;
+  --spacing-space-18: 18px;
+  --spacing-space-20: 20px;
+  --spacing-space-24: 24px;
+  --spacing-space-23: 23px;
+  --spacing-space-27: 27px;
+  --spacing-space-32: 32px;
+  --spacing-space-37: 37px;
+  --spacing-space-42: 42px;
+  --spacing-space-43: 43px;
+  --spacing-space-45: 45px;
+  --spacing-space-52: 52px;
+  --spacing-space-62: 62px;
+  --spacing-space-113: 113px;
+  --spacing-space-156: 156px;
+
+  /* size */
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-32: 32px;
+  --text-37: 37px;
+  --text-42: 42px;
+  --text-43: 43px;
+  --text-52: 52px;
+  --text-62: 62px;
+  --text-156: 156px;
+
+  /*font family*/
   --font-seaweed : var(--font-seaweed);
   --font-saira : var(--font-saira);
+
+  /* radius */
+  --radius-4: 4px;
+  --radius-5: 5px;
+
+  /* blur */
+  --blur-4: 4px;
 }
 
 :root {
@@ -80,6 +132,12 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  
+  /* color */
+  --color-black: #000000;
+  --color-primary-800: #294E73;
+  --color-white: #fff;
+
   
 
   /* font family */
@@ -127,5 +185,41 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities{
+
+  .blur-4{
+    filter: blur(4px);
+  }
+
+  .arrow{
+    width: 25px;
+  }
+}
+
+@layer components{
+  .hover-zigzag-underline{
+    @apply relative cursor-pointer;
+  }
+
+  .hover-zigzag-underline::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 10px;
+    opacity: 0;
+    transition: width 0.3s ease-out, opacity 0.2s ease-out;
+    background-image: url('./assets/zigzag.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .hover-zigzag-underline:hover::after{
+    width: 100%;
+    opacity: 1;
   }
 }

@@ -1,11 +1,11 @@
+import Navbar from "@/container/Navbar"
 
 
 const App = () => {
   return (
-    <h1 className="text-3xl font-seaweed">
-      u.mj
-      <span className="font-saira">Home</span>
-  </h1>
+    <div className="w-full h-dvh overflow-x-hidden px-space-43 py-space-24 bg-gradient-to-b from-black to-primary-800">
+      <Navbar/>
+    </div>
   )
 }
 
