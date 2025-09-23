@@ -1,8 +1,7 @@
-import React from 'react'
 
 interface CursiveProps{
     text: string,
-    className: string
+    className?: string
 }
 
 const Cursive = ({text, className}: CursiveProps) => {

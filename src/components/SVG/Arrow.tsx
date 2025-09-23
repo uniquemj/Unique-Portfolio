@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface ArrowProps{
   className: string,
   width: string,

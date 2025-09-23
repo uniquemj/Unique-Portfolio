@@ -1,7 +1,6 @@
 import Cursive from "@/components/Cursive";
 import Arrow from "@/components/SVG/Arrow";
 import { Button } from "@/components/ui/button";
-import React from "react";
 
 const Navbar = () => {
   return (

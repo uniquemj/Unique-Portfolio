@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&family=Seaweed+Script&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sequel?styles=37705');
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -6,7 +7,7 @@
 @custom-variant dark (&:is(.dark *));
 
 body{
-  font-family: var(--font-saira);
+  font-family: var(--font-Sequel);
 }
 
 @theme inline {
@@ -52,6 +53,7 @@ body{
   --color-primary-800: var(--color-primary-800);
 
   /* spacing */
+  --spacing-space-minus-10: -10px;
   --spacing-space-3: 3px;
   --spacing-space-4: 4px;
   --spacing-space-10: 10px;
@@ -72,6 +74,9 @@ body{
   --spacing-space-62: 62px;
   --spacing-space-113: 113px;
   --spacing-space-156: 156px;
+  --spacing-space-203: 203px;
+  --spacing-space-825: 825px;
+
 
   /* size */
   --text-14: 14px;
@@ -143,6 +148,7 @@ body{
   /* font family */
   --font-seaweed: "Seaweed Script", cursive;
   --font-saira: "Saira", sans-serif;
+  --font-Sequel: "Sequel", sans-serif;
 }
 
 .dark {
@@ -221,5 +227,13 @@ body{
   .hover-zigzag-underline:hover::after{
     width: 100%;
     opacity: 1;
+  }
+}
+
+@utility no-scrollbar{
+  -ms-overflow-style: none;
+  scollbar-width: none;
+  &::-webkit-scrollbar{
+    display: none;
   }
 }
