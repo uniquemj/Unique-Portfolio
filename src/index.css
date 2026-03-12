@@ -7,7 +7,7 @@
 @custom-variant dark (&:is(.dark *));
 
 body{
-  font-family: var(--font-Sequel);
+  font-family: var(--font-saira);
 }
 
 @theme inline {
@@ -72,9 +72,16 @@ body{
   --spacing-space-45: 45px;
   --spacing-space-52: 52px;
   --spacing-space-62: 62px;
+  --spacing-space-70: 70px;
+  --spacing-space-75: 75px;
+  --spacing-space-80: 80px;
+  --spacing-space-90: 90px;
+  --spacing-space-100: 100px;
   --spacing-space-113: 113px;
   --spacing-space-156: 156px;
   --spacing-space-203: 203px;
+  --spacing-space-742: 742px;
+  --spacing-space-793: 793px;
   --spacing-space-825: 825px;
 
 
@@ -90,6 +97,12 @@ body{
   --text-43: 43px;
   --text-52: 52px;
   --text-62: 62px;
+  --text-70: 70px;
+  --text-75: 75px;
+  --text-80: 80px;
+  --text-90: 90px;
+  --text-100: 100px;
+  --text-113: 113px;
   --text-156: 156px;
 
   /*font family*/

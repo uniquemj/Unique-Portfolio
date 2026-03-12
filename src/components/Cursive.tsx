@@ -6,7 +6,7 @@ interface CursiveProps{
 
 const Cursive = ({text, className}: CursiveProps) => {
   return (
-    <h1 className={`${className} font-seaweed`}>{text}</h1>
+    <p className={`${className} font-seaweed`}>{text}</p>
   )
 }
 
