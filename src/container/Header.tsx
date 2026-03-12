@@ -1,6 +1,5 @@
 import Cursive from "@/components/Cursive";
-import windows from "@/assets/images/window.svg";
-import codesnippet from "@/assets/images/codesnippet.svg";
+import header_img from "@/assets/images/header_img.svg";
 import { MapPin } from "lucide-react";
 
 const Header = () => {
@@ -20,18 +19,13 @@ const Header = () => {
       </div>
       <div className="relative max-w-space-793 max-h-space-742  top-space-32">
         <div className="relative w-auto h-auto z-10">
-          <img src={windows} alt="windows" />
+          <img src={header_img} alt="windows" />
         </div>
         <div className="absolute top-0 w-full h-full z-10 flex items-center">
-            <div className=" px-space-75 flex flex-row justify-evenly h-space-203 w-full">
-              <div className="flex justify-center items-center h-full w-space-156 text-white">
-                <div className="w-3/5 max-w-3/5">
+            <div className=" px-space-75 flex flex-row h-space-203 w-full">
+              <div className="flex justify-center items-center mx-space-100 h-full w-space-156 text-white">
+                <div className="w-3/5 max-w-3/5 ">
                   <p className="text-18 text-center font-normal"><Cursive text="1+ year experience" className="inline" /> as a full stack developer</p>
-                </div>
-              </div>
-              <div className="border h-full w-space-156">
-                <div className="w-full h-full">
-                  <img src={codesnippet} alt="codesnippet" />
                 </div>
               </div>
             </div>
@@ -39,7 +33,7 @@ const Header = () => {
       </div>
       <div className = "w-full p-space-4 flex flex-col justify-center items-center">
   
-          <p className="text-white text-center text-24 font-normal inline"><Cursive text = "Based" className="inline"/> in Lalitpur, Nepal<span><MapPin/></span></p>
+          <p className="text-white text-center text-24 font-normal flex flex-row items-center gap-space-4"><Cursive text = "Based" className="inline"/> in Lalitpur, Nepal<span><MapPin/></span></p>
       </div>
     </div>
   );
