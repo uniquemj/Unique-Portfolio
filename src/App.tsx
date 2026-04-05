@@ -1,23 +1,18 @@
-import Navbar from "@/container/Navbar"
-import Header from "@/container/Header"
-import Construction from "@/components/Construction"
-
+import Navbar from "@/container/Navbar";
+import Header from "@/container/Header";
+import Construction from "@/components/Construction";
+import ComingSoon from "./container/ComingSoon";
 
 const App = () => {
-  const InConstruction = import.meta.env.VITE_INCONSTRUCTION === "true"
-  console.log(InConstruction)
+  const InConstruction = import.meta.env.VITE_INCONSTRUCTION === "true";
+  console.log(InConstruction);
   return (
     <main>
-      {
-        InConstruction ? <Construction/> : (
-          <>
-            <Navbar/>
-            <Header/>
-          </>
-        )
-      }
+      <Navbar />
+      <Header />
+      <ComingSoon />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
