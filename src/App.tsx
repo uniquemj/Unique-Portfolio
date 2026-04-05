@@ -1,6 +1,5 @@
 import Navbar from "@/container/Navbar";
 import Header from "@/container/Header";
-import Construction from "@/components/Construction";
 import ComingSoon from "./container/ComingSoon";
 
 const App = () => {
