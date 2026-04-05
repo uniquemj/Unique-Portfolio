@@ -12,7 +12,7 @@ const ComingSoon = () => {
         y: 0
     }}
     transition={{
-        delay: 0.3,
+        delay: 0.5,
         duration: 0.5,
         ease: "easeIn"
     }}
