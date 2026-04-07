@@ -81,8 +81,11 @@ html, body{
   --spacing-space-90: 90px;
   --spacing-space-100: 100px;
   --spacing-space-113: 113px;
+  --spacing-space-142: 142px;
   --spacing-space-156: 156px;
+  --spacing-space-127: 127px;
   --spacing-space-203: 203px;
+  --spacing-space-417: 417px;
   --spacing-space-742: 742px;
   --spacing-space-793: 793px;
   --spacing-space-825: 825px;
@@ -231,7 +234,7 @@ html, body{
   }
 
   header{
-    @apply max-sm:mt-10 w-full h-full flex flex-col sm:justify-center items-center max-sm:px-space-24
+    @apply max-sm:mt-10 w-full h-full flex flex-col sm:justify-center items-center max-sm:px-space-24 mb-space-142
   }
 }
 
@@ -247,6 +250,9 @@ html, body{
 }
 
 @layer components{
+  #skills{
+    @apply flex w-space-4
+  }
   .hover-zigzag-underline{
     @apply relative cursor-pointer;
   }
