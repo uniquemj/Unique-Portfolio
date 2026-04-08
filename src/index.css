@@ -218,7 +218,7 @@ html, body{
   }
 
   main{
-    @apply w-full h-dvh overflow-x-hidden sm:px-space-43 sm:py-space-24 no-scrollbar;
+    @apply w-dvw h-dvh overflow-x-hidden sm:px-space-43 sm:py-space-24 no-scrollbar;
   }
 
   nav{

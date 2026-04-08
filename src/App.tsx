@@ -4,13 +4,16 @@ import ComingSoon from "@/container/ComingSoon";
 import Skills from "@/container/Skills";
 
 const App = () => {
-  const InConstruction = import.meta.env.VITE_INCONSTRUCTION === "true";
+  const InConstruction = import.meta.env.VITE_INCONSTRUCTION === "false";
   console.log(InConstruction);
   return (
     <main>
       <Navbar />
       <Header />
-      <Skills/>
+      {
+        InConstruction &&
+        <Skills/>
+      }
       <ComingSoon />
     </main>
   );
