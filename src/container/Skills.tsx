@@ -1,4 +1,3 @@
-import React from 'react'
 import { SKILLS } from '@/constants/skill'
 import SkillCard, { type SkillCardType } from '@/components/SkillCard'
 
