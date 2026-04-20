@@ -1,19 +1,19 @@
-import { Construction, CopyRight, Navbar } from "./components/container"
+import {Route, Routes} from 'react-router';
+import Layout from './Layout';
+import { Quests, Skills, Stats } from './container';
 
 const App = () => {
-  const InConstruction = import.meta.env.VITE_CONSTRUCTION === "true";
   return (
-    <main>
-      <Navbar/>
-      {
-        InConstruction ?
-        <Construction/>
-        :
-        <></>
-      }
-      <CopyRight/>
-    </main>
-  )
+    <Routes>
+      <Route element = {<Layout/>} >
+        <Route index element = {<Stats/>}/>
+
+        <Route path='stats' element = {<Stats/>}/>
+        <Route path='skills' element = {<Skills/>}/>
+        <Route path='quests' element = {<Quests/>}/>
+      </Route>
+    </Routes>
+  ) 
 }
 
 export default App

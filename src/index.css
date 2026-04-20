@@ -187,15 +187,15 @@ body {
       ul {
         @apply flex items-center gap-8 max-sm:hidden;
 
-        p {
+        .nav-item {
           @apply text-sm font-bold text-neutral-muted cursor-pointer transition-all duration-100 ease-in-out;
         }
 
-        p:hover {
+        .nav-item:hover {
           @apply text-primary-color border-b-4 py-1;
         }
 
-        p.active {
+        .nav-item-active {
           @apply text-primary-color border-b-4 py-1;
         }
       }
@@ -207,15 +207,15 @@ body {
       ul {
         @apply flex justify-between items-center;
 
-        li {
+        .nav-item {
           @apply flex flex-col items-center font-bold text-sm gap-2;
         }
 
-        li:hover{
+        .nav-item:hover{
           @apply text-primary-color;
         }
 
-        li:active{
+        .nav-item-active{
           @apply text-primary-color;
         }
       }
