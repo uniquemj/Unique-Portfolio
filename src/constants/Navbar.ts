@@ -5,18 +5,18 @@ export const NAV_OPTIONS = [
         id: 1,
         label: "STATS",
         logo: ChartColumnDecreasing,
-        url: "#"
+        url: "/stats"
     },
     {   
         id: 2,
         label: "SKILLS",
         logo:Medal,
-        url: ""
+        url: "/skills"
     },
     {   
         id: 3,
         label: "QUESTS",
         logo: Compass,
-        url: "#"
+        url: "/quests"
     },
 ]
